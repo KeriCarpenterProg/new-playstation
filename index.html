@@ -80,21 +80,20 @@
             </div>
         </div>
     </div>
-</div>
-
-<div class="container">
     <div class="row row-content  align-items-center">
         <div class="col-sm-4 col-md-3">
             <h2  class="text-sm-right">Featured Campsites</h2>
         </div>
         <div class="col">
-            <h3>React Lake Campground</h3>
-            <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+            <div class="media">
+                <div class="media-body align-self-center">
+                    <h3>React Lake Campground</h3>
+                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                </div>
+                <img src="img/react-lake-thumb.jpg" alt="Breadcrumb Trail" class="d-flex ml-3 img-thumbnail"/>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="container">
     <div class="row row-content  align-items-center">
         <div class="col-sm-4 order-sm-last col-md-3">
             <h2 class="text-sm-right">Our Community Partners</h2>
@@ -109,11 +108,42 @@
             </div>
         </div>
     </div>
-</div>
-    <div>
- 
-
+    <div class="row row-content">
+        <div class="col col-sm-6 ms-auto">
+            <div class="card">
+                <h3 class="card-header bg-info text-white">
+                    Reserve a Campsite
+                </h3>
+                <div class="card-body">
+                    <form action="" id="reserveForm">
+                        <div class="row form-group my-2">
+                            <label class="col-12 col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
+                            <select class="col mx-3 form-control" name="numCampers" id="NumCampers">
+                                <option value="Select">Select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <div class="row form-group my-2 col-form-label">
+                            <label class="col-12 col-sm-6" for="date">Date</label>
+                            <input class="col mx-3 form-control" type="date" id="date" name="date"
+                            placeholder="mm/dd/yyyy">
+                        </div>
+                        <div class="row my-2">
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
     <footer class="site-footer">
         <div class="container">
