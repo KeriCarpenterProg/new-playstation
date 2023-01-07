@@ -112,7 +112,7 @@
         </div>
     </div>
     <div class="row row-content">
-        <div class="col col-sm-6 ms-auto">
+        <div class="col col-sm-6 mx-auto">
             <div class="card">
                 <h3 class="card-header bg-info text-white">
                     Reserve a Campsite
@@ -121,20 +121,24 @@
                     <form action="" id="reserveForm">
                         <div class="row form-group my-2">
                             <label class="col-12 col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
-                            <select class="col mx-3 form-control" name="numCampers" id="NumCampers">
-                                <option value="Select">Select</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
+                            <div class="col">
+                                <select class="form-control" name="numCampers" id="numCampers">
+                                    <option value="Select">Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="row form-group my-2 col-form-label">
                             <label class="col-12 col-sm-6" for="date">Date</label>
-                            <input class="col mx-3 form-control" type="date" id="date" name="date"
-                            placeholder="mm/dd/yyyy">
+                            <div class="col">
+                                <input class="form-control" type="date" id="date" name="date"
+                                placeholder="mm/dd/yyyy">
+                            </div>
                         </div>
                         <div class="row my-2">
                             <div class="col">
