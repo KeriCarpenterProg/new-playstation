@@ -73,3 +73,7 @@ header h2 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.maxHeight {
+  max-height: 200px;
+}
