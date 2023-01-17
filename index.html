@@ -92,7 +92,7 @@
       </div>
     </div>
 
-<div class="container">
+<!-- <div class="container">
     <h4 class="mt-3 mb-1">Popular Games Right Now</h4>
     <p>Carousel with No text overlay</p>
     <hr>
@@ -119,9 +119,9 @@
         </button>
       </div>
       <hr>
-</div>
+</div> -->
 
-<div class="container">
+<!-- <div class="container">
     <h4 class="mt-3 mb-1">Popular Games Right Now</h4>
     <p>Carousel with text overlay</p>
     <hr>
@@ -164,7 +164,7 @@
         </button>
       </div>
       <hr>
-</div>
+</div> -->
 
 
 
@@ -273,6 +273,32 @@
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script>
+  <!-- change carousel interval -->
+  $('#game-carousel').carousel({
+    interval:4000
+  })
+
+  <!-- show multiple carousel images simultaneously -->
+  $('.carousel .carousel-item').each(function(){
+    let next = $(this).next();
+    console.log(next.length);
+    if(!next.length) {
+      next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+
+    for(let i=0;i<2;i++) {
+      next=next.next();
+      if(!next.length) {
+        next=$(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+    }
+  })
+
+</script>
 </body>
 
 </html>
