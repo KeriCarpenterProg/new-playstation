@@ -77,3 +77,13 @@ header h2 {
 .maxHeight {
   max-height: 200px;
 }
+
+#maianImg {
+  height: auto;
+  width: 20%;
+}
+
+.d-none {
+  color: blue;
+  float: right;
+}
