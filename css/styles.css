@@ -87,3 +87,7 @@ header h2 {
   color: blue;
   float: right;
 }
+
+#description {
+  color: #343a40;
+}
