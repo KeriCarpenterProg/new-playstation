@@ -75,5 +75,39 @@ header h2 {
 }
 
 .maxHeight {
-  max-height: 200px;
+  max-height: 300px;
+}
+
+
+.container-carousel-img {
+	max-width: 35vw;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#MIcarousel img {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#MIcarousel .carousel-item.active,
+#MIcarousel .carousel-item-next,
+#MIcarousel .carousel-item-prev {
+  display: flex;
+}
+
+#MIcarousel .carousel-item-right.active,
+#MIcarousel .carousel-item-next {
+  transform: translateX(25%);
+}
+
+#MIcarousel .carousel-item-left.active, 
+#MIcarousel .carousel-item-prev {
+  transform: translateX(-25%);
+  opacity: 30%;
+}
+
+#MIcarousel .carousel-item-right,
+#MIcarousel .carousel-item-left{ 
+  transform: translateX(0);
 }
