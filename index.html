@@ -59,12 +59,14 @@
         </div>
     </nav>
 
+    <!-- ayd0 1/18/23 MULTI-IMAGE CAROUSEL -->
     <div class="container">
       <h4 class="mt-3 mb-1">Carousel with Multiple Images Showing</h4>
       <p>Carousel that shows multiple images</p>
       <hr>
-      <div class="carousel slide" data-ride="carousel" id="game-carousel">
-        <div class="carousel-inner">
+      <div class="carousel slide d-flex" data-ride="carousel" id="game-carousel">
+        <div id="MIcarousel" class="carousel-inner">
+	  <div class="container-carousel-img">
           <div class="carousel-item active">
             <img src="https://images.igdb.com/igdb/image/upload/t_original/co1r77.jpg" alt="" class="d-block img-responsive maxHeight">
           </div>
@@ -80,6 +82,7 @@
           <div class="carousel-item">
             <img src="https://images.igdb.com/igdb/image/upload/t_original/co1r7h.jpg" alt="" class="d-block img-responsive maxHeight">
           </div>
+	</div>
         </div>
         <button class="carousel-control-prev" type="button" data-target="#game-carousel" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -92,36 +95,7 @@
       </div>
     </div>
 
-<!-- <div class="container">
-    <h4 class="mt-3 mb-1">Popular Games Right Now</h4>
-    <p>Carousel with No text overlay</p>
-    <hr>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://images.igdb.com/igdb/image/upload/t_original/co5s5v.jpg" 
-            class="d-block mx-auto maxHeight" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1ur4.jpg" class="d-block mx-auto maxHeight" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.igdb.com/igdb/image/upload/t_original/co1r77.jpg" class="d-block mx-auto maxHeight" alt="...">
-          </div>
-        </div>
-       <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </button>
-      </div>
-      <hr>
-</div> -->
-
-<!-- <div class="container">
+<div class="container">
     <h4 class="mt-3 mb-1">Popular Games Right Now</h4>
     <p>Carousel with text overlay</p>
     <hr>
@@ -164,7 +138,7 @@
         </button>
       </div>
       <hr>
-</div> -->
+</div>
 
 
 
@@ -273,31 +247,8 @@
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 
-<script>
-  <!-- change carousel interval -->
-  $('#game-carousel').carousel({
-    interval:4000
-  })
-
-  $('.carousel .carousel-item').each(function(){
-    let next = $(this).next();
-    console.log(next.length);
-    if(!next.length) {
-      next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-
-    for(let i=0;i<2;i++) {
-      next=next.next();
-      if(!next.length) {
-        next=$(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo($(this));
-    }
-  })
-
-</script>
 </body>
 
 </html>
