@@ -6,12 +6,21 @@
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin page2.html -d dist --htmlmin -o dist/page2.html && usemin page4.html -d dist --htmlmin -o dist/page4.html && usemin page3.html -d dist --htmlmin -o dist/page3.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Keri Carpenter <kericarpenter@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",

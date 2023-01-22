@@ -112,8 +112,10 @@ header h2 {
   background-color: #ccc;
 }
 
+/* slick slider classes */
+
 .slick-slider-wrapper {
-  /* width: 90%; */
+  width: 90%;
   margin: 0 auto;
 }
 
