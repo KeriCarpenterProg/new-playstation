@@ -1,3 +1,17 @@
+<!-- Slick Slider Initialization and parameters -->
+$(document).ready(function(){
+  $('.multiple-pictures').slick({
+    infinite: true,
+    slidesToShow: 3,
+    arrows: true,
+    slidesToScroll:3
+  });
+
+}); 
+
+
+
+
 <!-- change carousel interval -->
 $('#MIcarousel').carousel({
   interval:4000,
