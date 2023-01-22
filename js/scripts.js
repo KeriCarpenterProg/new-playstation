@@ -2,7 +2,7 @@
 $(document).ready(function(){
   $('.multiple-pictures').slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     arrows: true,
     slidesToScroll:3
   });
