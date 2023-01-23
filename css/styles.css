@@ -27,10 +27,6 @@ header h2 {
   min-height: 200px;
 }
 
-.navbar {
-  background-color: #901cad;
-}
-
 .review-panel {
   position: relative;
   display: block;
@@ -75,19 +71,72 @@ header h2 {
 }
 
 .maxHeight {
-  max-height: 200px;
+  max-height: 300px;
 }
 
-#maianImg {
-  height: auto;
-  width: 20%;
+
+.container-carousel-img {
+	max-width: 35vw;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-.d-none {
-  color: blue;
-  float: right;
+#MIcarousel img {
+	margin-right: auto;
+	margin-left: auto;
 }
 
-#description {
-  color: #343a40;
+
+#MIcarousel .carousel-item.active,
+#MIcarousel .carousel-item-next,
+#MIcarousel .carousel-item-prev {
+  display: flex;
 }
+
+#MIcarousel .carousel-item-right.active,
+#MIcarousel .carousel-item-next {
+  transform: translateX(25%);
+}
+
+#MIcarousel .carousel-item-left.active, 
+#MIcarousel .carousel-item-prev {
+  transform: translateX(-25%);
+  opacity: 30%;
+}
+
+#MIcarousel .carousel-item-right,
+#MIcarousel .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+.grey-background {
+  background-color: #ccc;
+}
+
+/* slick slider classes */
+
+.slick-slider-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: gray !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.multiple-pictures {
+  text-align: center;
+}
+.multiple-pictures img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
