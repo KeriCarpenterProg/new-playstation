@@ -11,7 +11,7 @@ $(document).ready(function () {
   $("#full-width-slider").slick({
     infinite: true,
     arrows: true,
-    slidesToShow: 1,
+    slidesToShow: 2,
     variableWidth: true,
   });
 });
