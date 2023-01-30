@@ -21,68 +21,50 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Playstation Games</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <a class="navbar-brand" href="index.html">Playstation Games</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+    
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">
-              <i class="fa fa-home fa-lg"></i>
-              Home <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="index.html">
+              <i class="fa fa-home fa-lg"></i> 
+              Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="about.html">
               <i class="fa fa-info fa-lg"></i>
-              About</a
-            >
+              About</a>
           </li>
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="page3.html" role="button" data-toggle="dropdown" aria-expanded="false">
               Playstation Games
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">God of War: Ragnarok</a>
-              <a class="dropdown-item" href="#">Spider Man</a>
-              <a class="dropdown-item" href="#">Minecraft</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Last of Us Part II</a>
+              <a class="dropdown-item" href="page3.html">God of War: Ragnarok</a>
+              <a class="dropdown-item" href="page3.html">Minecraft</a>
+              <a class="dropdown-item" href="page3.html">Spider Man</a>
+              <a class="dropdown-item" href="page3.html">God of War</a>
+              <a class="dropdown-item" href="page3.html">Death Stranding</a>
+              <a class="dropdown-item" href="page3.html">Call of Duty</a>
+              <a class="dropdown-item" href="page3.html">Uncharted</a>
+              <a class="dropdown-item" href="page3.html">The Last of Us Part II</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="page3.html">Last of Us Part II</a> -->
             </div>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
-          </li>
+          </li> -->
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
-    </nav>
+  </nav>
 
     <!-- Added name of the game JY-->
     <div class="container">
@@ -125,32 +107,177 @@
     <!-- Keri will put container  -->
 
     <div class="placeholder-slick-slider">
-      <h1>Keri will create a full width slick slider component</h1>
-      <p>Brand new work</p>
-      <p>that will display all the visual assets of the game</p>
-      <p>screenshots, artwork, cover art, videos, etc.</p>
-    </div>
-    <!-- End Keri's container -->
-    <div class="container">
-      <div class="row row-content">
-        <div class="col-12">
-          <h3>Overall rating</h3>
-        </div>
-        <div class="col-12">
-          <h3>
-            <i class="fa fa-star-o" style="font-size: 36px"></i>
-            <i class="fa fa-star-o" style="font-size: 36px"></i>
-            <i class="fa fa-star-o" style="font-size: 36px"></i>
-            <i class="fa fa-star-o" style="font-size: 36px"></i>
-            <i class="fa fa-star-o" style="font-size: 36px"></i>
-          </h3>
+      <hr>
+      <h4 class="mt-3 mb-1 ml-5">Artwork from Games: Videos, Screenshots, Covers</h4>
+      <hr>
+      <div class="my-3">
+        <div class="col">
+          <div class="slick-slider-wrapper" id="full-width-slider">
+            <div>
+              <iframe
+              title="God of War"
+              class="m-2"
+              width="560"
+              height="300"
+              src="https://www.youtube.com/embed/rClXqZD2Xrs"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            </div>
+            <div>
+              <a href="page3.html" class="review-panel">
+                <div class="review-panel-caption">
+                    <p class="review-panel-title overflow-wrap">The Last Of Us               
+                    </p>
+                </div>
+                <img class="img-fluid maxHeight m-2" src="https://images.igdb.com/igdb/image/upload/t_original/sc8i93.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="page3.html" class="review-panel">
+                <div class="review-panel-caption">
+                    <p class="review-panel-title overflow-wrap">Uncharted               
+                    </p>
+                </div>
+                <img class="img-fluid maxHeight m-2" src="https://images.igdb.com/igdb/image/upload/t_original/tqt0sxjytiovh3g96cl0.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="page3.html" class="review-panel">
+                <div class="review-panel-caption">
+                    <p class="review-panel-title overflow-wrap">Call of Duty               
+                    </p>
+                </div>
+                <img class="img-fluid maxHeight m-2" src="https://images.igdb.com/igdb/image/upload/t_original/ar6dr.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="page3.html" class="review-panel">
+                <div class="review-panel-caption">
+                    <p class="review-panel-title overflow-wrap">Death Stranding               
+                    </p>
+                </div>
+                <img class="img-fluid maxHeight m-2" src="https://images.igdb.com/igdb/image/upload/t_original/ot22cc6wsmhbrcnuo8ti.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="page3.html" class="review-panel">
+                <div class="review-panel-caption">
+                    <p class="review-panel-title overflow-wrap">God of War               
+                    </p>
+                </div>
+                <img class="img-fluid maxHeight m-2" src="https://images.igdb.com/igdb/image/upload/t_original/co1tmu.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="page3.html" class="review-panel">
+                <div class="review-panel-caption">
+                    <p class="review-panel-title overflow-wrap">Spider Man               
+                    </p>
+                </div>
+                <img class="img-fluid maxHeight m-2" src="https://images.igdb.com/igdb/image/upload/t_original/co1r77.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="page3.html" class="review-panel">
+                <div class="review-panel-caption">
+                    <p class="review-panel-title overflow-wrap">Minecraft               
+                    </p>
+                </div>
+                <img class="img-fluid maxHeight m-2" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1ur4.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="page3.html" class="review-panel">
+                <div class="review-panel-caption">
+                    <p class="review-panel-title overflow-wrap">God of War Ragnarok               
+                    </p>
+                </div>
+                <img class="img-fluid maxHeight m-2" src="https://images.igdb.com/igdb/image/upload/t_original/co5s5v.jpg" alt="">
+              </a>
+            </div>
+    
+            <div>
+              <a href="page3.html" class="review-panel">
+                <div class="review-panel-caption">
+                    <p class="review-panel-title overflow-wrap">The Last Of Us: Part 2 is great                    
+                    </p>
+                </div>
+                <img class="img-fluid maxHeight m-2" src="https://images.igdb.com/igdb/image/upload/t_original/rqr5dxxw97zikyhdn2tq.jpg" alt="">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row row-content">
-        <div class="col-12">
-          <h3>REVIEWS</h3>
-        </div>
+    </div>
+    <!-- End Keri's container -->
 
+    <div class="container">
+      <h4 class="mt-3 mb-1">Game Recommendations</h4>
+      <hr />
+      <div class="row my-3">
+        <div class="col">
+          <div class="multiple-pictures">
+            <div>
+              <img
+                class="img-fluid maxHeight"
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/ttaatqkearykpgkmz0ad.png"
+              />
+              <h4>Life is Feudal: Your Own</h4>
+            </div>
+            <div>
+              <img
+                class="img-fluid maxHeight"
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1k9j.png"
+              />
+              <h4>Eternity: The Last Unicorn</h4>
+            </div>
+            <div>
+              <img
+                class="img-fluid maxHeight"
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1zk1.png"
+              />
+              <h4>Pokémon Shield</h4>
+            </div>
+            <div>
+              <img
+                class="img-fluid maxHeight"
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2nix.png"
+              />
+              <h4>Warhammer: Chaosbane</h4>
+            </div>
+            <div>
+              <img
+                class="img-fluid maxHeight"
+                src="https://images.igdb.com/igdb/image/upload/t_original/co1tmu.jpg"
+              />
+              <h4>God of War</h4>
+            </div>
+            <div>
+              <img
+                class="img-fluid maxHeight"
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co20r3.png"
+              />
+              <h4>Borderlands 3</h4>
+            </div>
+            <div>
+              <img
+                class="img-fluid maxHeight"
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2t2f.png"
+              />
+              <h4>Torchlight III</h4>
+            </div>
+            <div>
+              <img
+                class="img-fluid maxHeight"
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1rg7.png"
+              />
+              <h4>Savage Lands</h4>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -195,10 +322,10 @@
             ><br />
             <a
               role="button"
-              href="mailto:campsites@nucamp.co"
+              href="mailto:playstation@gmail.com"
               class="btn btn-link"
               ><i class="fa fa-envelope-o fa-lg text-primary"></i>
-              campsites@nucamp.co</a
+              playstation@gmail.com</a
             >
           </div>
         </div>
