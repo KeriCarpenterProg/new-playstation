@@ -6,6 +6,11 @@ h2 {
   color: #3046c5;
 }
 
+/* a:link, a:hover, a:visited, a:active {
+  color: black;
+  text-decoration: none;
+} */
+
 header h2 {
   color: #cec8ff;
 }
@@ -70,6 +75,10 @@ header h2 {
   text-overflow: ellipsis;
 }
 
+.border {
+  border: 3px dashed green;
+}
+
 .maxHeight {
   max-height: 300px;
 }
@@ -81,8 +90,20 @@ header h2 {
 	margin-left: auto;
 }
 
-.grey-background {
-  background-color: #ccc;
+.card {
+  border: none;
+}
+
+.card-title {
+  color: black;
+  text-align: left;
+  margin-bottom: 2px;
+  text-decoration: none;
+}
+.card-text {
+  color: gray;
+  font-size: 0.75em;
+
 }
 
 /* slick slider classes */
