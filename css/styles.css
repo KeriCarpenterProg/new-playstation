@@ -2,17 +2,19 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h2 {
-  color: #3046c5;
+a:link, a:visited, a:hover, a:active {
+  background-color: transparent;
+  text-decoration: none;
 }
 
-/* a:link, a:hover, a:visited, a:active {
-  color: black;
-  text-decoration: none;
-} */
+.image-behind {  
+  color: #FFFFFF;
+  /* filter: blur(12px); */
+}
 
-header h2 {
-  color: #cec8ff;
+.white-transparent {
+  border-radius: 1rem;
+  background-color: rgba(0,0,0,.5);
 }
 
 .site-footer {
@@ -20,12 +22,6 @@ header h2 {
   padding: 20px 0px;
 }
 
-.jumbotron {
-  margin: 0;
-  padding: 30px;
-  background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
-  color: white;
-}
 .row-content {
   margin: 10px;
   padding: 50px 0;
